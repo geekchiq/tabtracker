@@ -1,2 +1,2 @@
-# tabtracker_vue
+# tabtracker
 vuejs tutorial
