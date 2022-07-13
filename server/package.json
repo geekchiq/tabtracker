@@ -22,13 +22,11 @@
     "joi": "^17.4.2",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
-    "mysql": "^2.18.1",
-    "mysql2": "^2.3.0",
     "nodemon": "^2.0.12",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "sequelize": "^6.6.5",
-    "squel": "^5.13.0"
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
