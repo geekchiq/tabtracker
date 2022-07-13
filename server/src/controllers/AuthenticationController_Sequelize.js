@@ -1,10 +1,10 @@
 const { User } = require('../models')
 const jwt = require('jsonwebtoken')
-const config = require('../config/config')
+const config = require('../config/auth.config')
 
 function jwtSignUser(user) {
   const ONE_WEEK = 60 * 60 * 24 * 7
-  return jwt.sign(user, config.authentication.jwtSecret, {
+  return jwt.sign(user, config.secret, {
     expiresIn: ONE_WEEK
   })
 }

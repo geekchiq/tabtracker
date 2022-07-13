@@ -1,7 +1,7 @@
-const AuthenticationController = require('./controllers/AuthenticationController')
+const AuthenticationController = require('./controllers/AuthenticationController_Sequelize')
 const AuthenticationControllerPolicy = require('./policies/AuthenticationContrlollerPolicy')
-const SongsController = require('./controllers/SongsController')
-const BookmarksController = require('./controllers/BookmarksController')
+const SongsController = require('./controllers/SongsController_Sequelize')
+const BookmarksController = require('./controllers/BookmarksController_Sequelize')
 // const HistoriesController = require('./controllers/HistoriesController')
 
 // const isAuthenticated = require('./policies/isAuthenticated')

@@ -1,19 +1,13 @@
-const path = require('path')
-
 module.exports = {
   port: process.env.PORT || 8081,
   db: {
     database: process.env.DB_NAME || 'tabtracker',
-    user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASS || 'admin1234',
+    user: process.env.DB_USER || 'tabtracker',
+    password: process.env.DB_PASSWORD || 'tabtracker',
     options: {
-      dialect: process.env.DIALECT || 'mysql',
-      dialectModule: require('mysql2'),
-      host: process.env.HOSR || 'localhost',
-      storage: path.resolve(__dirname, './tabtracker.mysql')
+      dialect: process.env.DB_DIALECT || 'sqlite',
+      host: process.env.DB_HOST || 'localhost',
+      storage: './appsched.sqlite'
     }
-  },
-  authentication: {
-    jwtSecret: process.env.JWT_SECRET || 'secret'
   }
 }

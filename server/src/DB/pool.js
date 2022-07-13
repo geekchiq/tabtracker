@@ -1,3 +1,5 @@
+// This is used for MySQL DB
+
 const mysql = require('mysql')
 const config = require('../config/config')
 
